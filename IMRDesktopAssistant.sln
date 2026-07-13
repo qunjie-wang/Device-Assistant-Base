@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMRDesktopAssistant.Abstractions", "src\IMRDesktopAssistant.Abstractions\IMRDesktopAssistant.Abstractions.csproj", "{DDE05CA2-A7A1-42F5-916A-15AF6E7C5011}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMRDesktopAssistant", "src\IMRDesktopAssistant\IMRDesktopAssistant.csproj", "{84896D5E-988B-45A9-B42F-8DC183EB9A90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMRDesktopAssistant.Plugin.WashroomStatus", "src\IMRDesktopAssistant.Plugin.WashroomStatus\IMRDesktopAssistant.Plugin.WashroomStatus.csproj", "{A46753D8-A692-48C6-909A-0EF87BF21800}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDE05CA2-A7A1-42F5-916A-15AF6E7C5011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE05CA2-A7A1-42F5-916A-15AF6E7C5011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE05CA2-A7A1-42F5-916A-15AF6E7C5011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE05CA2-A7A1-42F5-916A-15AF6E7C5011}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84896D5E-988B-45A9-B42F-8DC183EB9A90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84896D5E-988B-45A9-B42F-8DC183EB9A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84896D5E-988B-45A9-B42F-8DC183EB9A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84896D5E-988B-45A9-B42F-8DC183EB9A90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A46753D8-A692-48C6-909A-0EF87BF21800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A46753D8-A692-48C6-909A-0EF87BF21800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A46753D8-A692-48C6-909A-0EF87BF21800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A46753D8-A692-48C6-909A-0EF87BF21800}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
