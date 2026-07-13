@@ -36,14 +36,14 @@ public sealed class WashroomApiClient : IDisposable
             }
 
             var idText = GetText(item, "stallId", "stall_id", "id", "name");
-            var id = ParseStallId(idText);
-            if (id is < 1 or > 4)
+            var parsedId = ParseStallId(idText);
+            if (parsedId is not int stallId || stallId is < 1 or > 4)
             {
                 continue;
             }
 
             var statusText = GetText(item, "status", "state", "occupancy", "value");
-            result[id.Value] = NormalizeStatus(statusText);
+            result[stallId] = NormalizeStatus(statusText);
         }
 
         return result;
