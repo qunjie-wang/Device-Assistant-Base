@@ -1,0 +1,33 @@
+name: Build Windows packages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Build release packages
+        shell: powershell
+        run: .\build-release.ps1
+
+      - name: Upload base package
+        uses: actions/upload-artifact@v4
+        with:
+          name: IMR-Device-Assistant-Base
+          path: artifacts/IMR-Device-Assistant-Base.zip
+
+      - name: Upload washroom plugin
+        uses: actions/upload-artifact@v4
+        with:
+          name: IMR-Washroom-Plugin
+          path: artifacts/IMR-Washroom-Plugin.zip
