@@ -1,0 +1,4 @@
+{
+  "ApiUrl": "http://192.168.4.196:3002/api/wc_status",
+  "RefreshSeconds": 3
+}
