@@ -64,7 +64,7 @@ public sealed class AppController : IDisposable
         };
         menu.Items.Add(autoStartItem);
         menu.Items.Add(new WinForms.ToolStripSeparator());
-        menu.Items.Add("退出", null, (_, _) => Application.Current.Shutdown());
+        menu.Items.Add("退出", null, (_, _) => System.Windows.Application.Current.Shutdown());
 
         _trayIcon = new WinForms.NotifyIcon
         {
