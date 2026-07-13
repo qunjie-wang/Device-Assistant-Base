@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <AssemblyName>IMRDesktopAssistant.Plugin.WashroomStatus</AssemblyName>
+    <RootNamespace>IMRDesktopAssistant.Plugin.WashroomStatus</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IMRDesktopAssistant.Abstractions\IMRDesktopAssistant.Abstractions.csproj" />
+  </ItemGroup>
+</Project>
